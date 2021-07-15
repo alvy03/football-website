@@ -150,4 +150,38 @@ h1{
     padding: 12px;
     padding-bottom: 15px;
 }
-
+.third-part{
+    
+    display: flex;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+   
+    
+}
+.text{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.win img{
+    width: 90%;
+    margin-right: 20px;
+}
+/* footer{
+    justify-content: center;
+}
+.third-part{
+    justify-content: center;
+    margin-top: 20px;
+    display: flex;
+} */
+/* LAST PART  */
+.last-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+.fab{
+    padding-left: 20px;
+}
