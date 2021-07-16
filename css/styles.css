@@ -1,12 +1,26 @@
+/* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body{
     font-family: 'Poppins', sans-serif;
 }
+.heading{
+    background-color: #2D25A0;
+    padding-top: 40px;
+    height: 677px;
+    width: 1300x;
+}
+.heading-title{
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+}
 nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+   
 }
 nav a{
     text-decoration: none;
@@ -14,25 +28,29 @@ nav a{
     color: white; 
 
 }
-.heading{
-    margin-left: 100px;
-    margin-right: 80px;
-    margin-top: 10px;
-    margin-bottom: 50px;
-
-}
 .link-button{
     text-decoration: none;
     background-color: #E02C6D;
     color: white;
     font-weight: 500;
-    padding: 10px 20px;
-    
-    
+    padding: 10px 20px;  
 }
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.title-part{
+    color: white;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-top: 40px;
+
+}
+
 h1{
     font-weight: 800;
-    font-size: 40px;
+    font-size: 50px;
 }
 .title-part{
     color: white;
@@ -42,22 +60,11 @@ h1{
     margin-top: 40px;
 
 }
-
-.container{
-    /* display: flex; */
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+.banner{
+    margin-right: 50px;
 }
-/* .image{
-    width: 50%;
-    height: 40px;
-    width: 50px;
-} */
-.first-part{
-    background-color: #2D25A0;
-    padding-top: 40px;
-
-
+.banner img{
+    width: 90%;
 }
 .fas{
     padding: 10px;
@@ -66,49 +73,38 @@ h1{
     padding-right: 10px;
 }
 
-
-    
- 
- .player-image img{
-     width: 100%;
- }
-
-.player-details{
-    width: 350px;
-    height: 150px;
-}
-
+/* Players profile */
+.profile-part{
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-top:70px;
+}  
+.players{
+    margin-bottom: 18px;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 30px;
+    padding: 12px;
+} 
 .player{
     display: flex;
     flex-direction: column;
     height: 500px;
     width: 350px;
     box-shadow: 0 0 5px 5px rgb(214, 214, 210);
-    padding: 15px;
-    
+    padding: 15px;   
 }
-.profile-part{
+.player-image img{
+     width: 100%;
+ }
+.player-details{
+    width: 350px;
+    height: 150px;
+}
 
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top:70px;
-    /* display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-column-gap:30px ;
-    grid-row-gap: 40px; */
-}
-.players{
-    margin-bottom: 18px;
-    border: 1px solid white;
-    width: 300px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 40px;
-    grid-row-gap: 30px;
-    
-    padding: 12px;
-    padding-bottom: 15px;
-}
+
 /* --------highlights-part------ */
 .highlights-part{
     display: grid;
@@ -149,3 +145,41 @@ h1{
 .fab{
     padding-left: 20px;
 }
+
+
+/*----------
+ Media Queries 
+ ------------*/
+ /* Mobile Devices  */
+ @media only screen and (max-width: 688px){
+    .player{
+        width: 100%;
+        flex-direction: column;
+    }
+    .highlights-part, .container, .players{
+        /* background-color: teal;  */
+        grid-template-columns: repeat(1, 1fr);   
+
+    }
+    /* .player, .blog{
+        flex-direction: column;
+    }  */ 
+    /* .blogs, .courses{
+        display: none;
+    }  
+}
+/* tablet devices */
+/* @media only screen and (min-width: 688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        /* background-color: violet ; */
+        /* grid-template-columns: repeat(2, 1fr); 
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+     */
+    
+
