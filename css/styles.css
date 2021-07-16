@@ -39,6 +39,7 @@ nav a{
 .container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    
 }
 .title-part{
     color: white;
@@ -145,17 +146,22 @@ h1{
 .fab{
     padding-left: 20px;
 }
+.container:hover{
+    background-color: mediumslateblue;
+    
+}
+a:hover{
+    background-color: mediumvioletred;
+    font-size: 14px;
+}
 
-
-/*----------
- Media Queries 
- ------------*/
- /* Mobile Devices  */
- @media only screen and (max-width: 688px){
+/* Mobile Devices  */
+@media only screen and (max-width: 688px){
     .player{
         width: 100%;
         flex-direction: column;
     }
     .highlights-part, .container, .players{
         grid-template-columns: repeat(1, 1fr);   
+    }
 }
